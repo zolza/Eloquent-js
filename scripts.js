@@ -34,3 +34,25 @@ while (counter<13) {
 }
 
 // i znow ostatnia wartosci jest undefined
+
+do {
+  var name = prompt("Who are you?");
+} while (!name);
+console.log(name);
+
+//This program will force you to enter a name. 
+//It will ask again and again until it gets something that is not an empty string. 
+//Applying the ! operator will convert a value to Boolean type before negating it, and all strings except "" convert to true.
+
+for (counter=0; counter <20; counter +=2) {
+	console.log(counter);
+}
+//znow undefined na koncu
+
+var powers13 = 1;
+for (counter=0; counter<13; counter++){
+	powers13 *=2
+	console.log(powers13)
+}
+
+// dlaczego przy przesunięcu 52 na 54 funkcja wykonuje sie tylko raz a nie 13.
