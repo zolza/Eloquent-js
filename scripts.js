@@ -40,8 +40,8 @@ do {
 } while (!name);
 console.log(name);
 
-//This program will force you to enter a name. 
-//It will ask again and again until it gets something that is not an empty string. 
+//This program will force you to enter a name.
+//It will ask again and again until it gets something that is not an empty string.
 //Applying the ! operator will convert a value to Boolean type before negating it, and all strings except "" convert to true.
 
 for (counter=0; counter <20; counter +=2) {
@@ -56,3 +56,33 @@ for (counter=0; counter<13; counter++){
 }
 
 // dlaczego przy przesunięcu 52 na 54 funkcja wykonuje sie tylko raz a nie 13.
+
+function div7 () {
+  for (var current = 20; ; current++) {
+    if (current % 7 == 0)
+      break;
+  }
+  console.log(current);
+};
+
+
+function suma (a,b) {
+    return a+b;
+};
+
+function srednia (a,b) {
+    return suma(a,b) / 2;
+};
+
+function sum (array) {
+  var total = 0;
+  for (i=0; i<array.length; i++){
+    total += array[i];
+  }
+  return total;
+}
+
+function mean (array) {
+  var length = array.length;
+  return sum(array) / length;
+};
