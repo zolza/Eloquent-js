@@ -131,6 +131,7 @@ for (i=0; i<7; i++){
   return number;
 }
 
+
 var number = 0;
 for (i=0; i<=100; i++) {
   if (number % 3 == 0 && number % 5 != 0)
