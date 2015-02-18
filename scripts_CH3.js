@@ -100,4 +100,21 @@ function greet(who) {
   console.log("Hello " + who);
 }
 console.log("Bye");
-//wywoluje tylko BYE.
+
+function power (base, exponent) {
+  if (exponent == undefined) {
+    exponent = 2;
+  } // nie ma nawiasów w książce, dlaczego?
+  var result = 1;
+  for (var i=0; i<exponent; i++) {
+    result *= base;
+  }
+  return result;
+};
+
+function wrapValue (x) {
+  var valueLocal = x;
+  return function () { //co tak wlaściwie znaczy, że nie ma nazwy?
+    return valueLocal; // czyli return zapisuje, gdzie?
+  }
+}; // Uncaught ReferenceError: valueLocal is not defined
