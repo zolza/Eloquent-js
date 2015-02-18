@@ -166,8 +166,42 @@ Passing this string to console.log should show something like this:
  # # # #
 # # # #
 When you have a program that generates this pattern, define a variable size = 8 and change the program so that it works for any size, outputting a grid of the given width and height.
+*/
+
+/*function breaker (size) {
+  var makeChess = "";
+  for (var i=0; i<size; i++) {
+    if (size[i] - 1 === "#") {
+      makeChess += " ";
+    } 
+    else {
+      makeChess += "#";
+    }
+}
+  for (var i=0; i<size; i++){
+    makeChess += "/n";
+}
+return makeChess;
+}; */
 
 
+for (var i = 0; i<8; i++) {
+var makeChess = "";
+    if (makeChess === "#") { //ten fragment nie dziala, jeszcze.
+      makeChess += ".";
+    } 
+    else {
+      makeChess += "#";
+    }
+  for (var i=0; i<8; i++){
+    makeChess += "\n";
+}
+  console.log(makeChess);
+};
+
+
+
+/*
 Moje fragmenty, nie działa:
 
  var row = "";
