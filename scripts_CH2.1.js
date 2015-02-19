@@ -173,7 +173,7 @@ When you have a program that generates this pattern, define a variable size = 8 
   for (var i=0; i<size; i++) {
     if (size[i] - 1 === "#") {
       makeChess += " ";
-    } 
+    }
     else {
       makeChess += "#";
     }
@@ -184,19 +184,16 @@ When you have a program that generates this pattern, define a variable size = 8 
 return makeChess;
 }; */
 
-
-for (var i = 0; i<8; i++) {
 var makeChess = "";
-    if (makeChess === "#") { //ten fragment nie dziala, jeszcze.
-      makeChess += ".";
-    } 
-    else {
+for (var i = 0; i<8; i++) {
+  for (var j = 0; j<8; j++) {
+    if ((i+j) % 2 == 0) {
+      makeChess += " ";
+    } else {
       makeChess += "#";
     }
-  for (var i=0; i<8; i++){
-    makeChess += "\n";
-}
-  console.log(makeChess);
+  }
+    makeChess += "\n"
 };
 
 
