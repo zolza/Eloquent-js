@@ -65,7 +65,7 @@ var launchMissiles = function(value) {
 if (safeMode)
   launchMissiles = function(value) {/* do nothing */};
 //no dobra, ale czym jest tutaj safeMode? Argumentem? Czymś gdzieś zdefiniowanym?
-//wywolanie launchMissiles: 
+//wywolanie launchMissiles:
 //function (value) {
 // missileSystem.launch("now");
 // }
@@ -76,7 +76,7 @@ function launchMissiles (value) {
 if (safeMode)
 function launchMissiles (value) {/* do nothing */
 };
-//wywolanie launchMissiles: 
+//wywolanie launchMissiles:
 //function launchMissiles(value) {
 // missileSystem.launch("now");
 // }
@@ -95,7 +95,7 @@ function greet(who) {
 }
 greet("Harry");
 console.log("Bye");
-//dlaczego zaczyna od wywolania greet("harry")?
+
 function greet(who) {
   console.log("Hello " + who);
 }
@@ -118,3 +118,4 @@ function wrapValue (x) {
     return valueLocal; // czyli return zapisuje, gdzie?
   }
 }; // Uncaught ReferenceError: valueLocal is not defined
+//zmienna jest zdefiniowana tylko w obrebie funkcji, consola nie ma do niej dostepu.
