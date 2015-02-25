@@ -138,3 +138,4 @@ function power(base, exponent) {
     result *= base;
   return result;
 }
+//!!!Running through a simple loop is a lot cheaper than calling a function multiple times.
