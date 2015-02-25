@@ -119,3 +119,22 @@ function wrapValue (x) {
   }
 }; // Uncaught ReferenceError: valueLocal is not defined
 //zmienna jest zdefiniowana tylko w obrebie funkcji, consola nie ma do niej dostepu.
+
+
+//recursion
+function powerR(base, exponent) {
+  if (exponent == 0)
+    return 1;
+  else
+    return base * powerR(base, exponent - 1);
+}
+
+//no recursion
+function power(base, exponent) {
+  if (exponent == undefined)
+    exponent = 2;
+  var result = 1;
+  for (var count = 0; count < exponent; count++)
+    result *= base;
+  return result;
+}
