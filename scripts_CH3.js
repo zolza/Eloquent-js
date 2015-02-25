@@ -171,5 +171,16 @@ function min (a,b) {
       return equal;
     }
   }
-};
+}; //strasznie to dlugie, trzeba jakos zautomatyzowac?
 
+/*function recursion (n) {
+  if (n>0) {
+  return n - recursion (n-2);   
+  }
+}
+
+function recursion (n) {
+  if (n>0) {
+  return n - recursion (n-2);   
+  }
+}
