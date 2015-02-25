@@ -139,3 +139,37 @@ function power(base, exponent) {
   return result;
 }
 //!!!Running through a simple loop is a lot cheaper than calling a function multiple times.
+
+/* The previous chapter introduced the 
+standard function Math.min that returns its smallest argument. 
+We can do that ourselves now.
+Write a function min that takes two arguments and returns their minimum.*/
+
+function min (a,b) {
+ if (a>0 && b>0) {
+    var equal = "arguments are equal!";
+    if (a>b) {
+      return a;
+    } else if (a==b) {
+      return equal;
+    } else {return b;}
+  }
+  else if (a<0 && b>0) {
+    return a;
+  }
+  else if (a>0 && b<0) {
+    return b;
+  } 
+  else {
+    if(a<b) {
+      return a;
+    }
+    else if (a>b) {
+      return b;
+    }
+    else {
+      return equal;
+    }
+  }
+};
+
