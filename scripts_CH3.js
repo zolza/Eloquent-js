@@ -140,47 +140,28 @@ function power(base, exponent) {
 }
 //!!!Running through a simple loop is a lot cheaper than calling a function multiple times.
 
-/* The previous chapter introduced the 
-standard function Math.min that returns its smallest argument. 
+/* The previous chapter introduced the
+standard function Math.min that returns its smallest argument.
 We can do that ourselves now.
 Write a function min that takes two arguments and returns their minimum.*/
 
 function min (a,b) {
- if (a>0 && b>0) {
-    var equal = "arguments are equal!";
-    if (a>b) {
-      return a;
-    } else if (a==b) {
-      return equal;
-    } else {return b;}
-  }
-  else if (a<0 && b>0) {
+  if(a<b) {
     return a;
-  }
-  else if (a>0 && b<0) {
+  } else {
     return b;
-  } 
-  else {
-    if(a<b) {
-      return a;
-    }
-    else if (a>b) {
-      return b;
-    }
-    else {
-      return equal;
-    }
   }
-}; //strasznie to dlugie, trzeba jakos zautomatyzowac?
+};
+
 
 /*function recursion (n) {
   if (n>0) {
-  return n - recursion (n-2);   
+  return n - recursion (n-2);
   }
 }
 
 function recursion (n) {
   if (n>0) {
-  return n - recursion (n-2);   
+  return n - recursion (n-2);
   }
 }
