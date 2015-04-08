@@ -165,3 +165,25 @@ function recursion (n) {
   return n - recursion (n-2);
   }
 }
+*/
+
+function isEven (n) {
+  if (n == 1) {
+    return false;
+  }
+  else if (n == 2){
+    return true;
+  }
+  else {
+    return n - isEven(n-2);
+  }
+};
+
+
+/*function power(base, exponent) {
+  if (exponent == 0)
+    return 1;
+  else
+    return base * power(base, exponent - 1);
+}
+*/
