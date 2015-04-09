@@ -154,19 +154,6 @@ function min (a,b) {
 };
 
 
-/*function recursion (n) {
-  if (n>0) {
-  return n - recursion (n-2);
-  }
-}
-
-function recursion (n) {
-  if (n>0) {
-  return n - recursion (n-2);
-  }
-}
-*/
-
 function isEven (n) {
   if (n == 1) {
     return false;
@@ -175,7 +162,7 @@ function isEven (n) {
     return true;
   }
   else {
-    return n - isEven(n-2);
+    return isEven(n-2);
   }
 };
 
