@@ -184,3 +184,13 @@ function countBs (s){
   }
   return countBs;
 }
+
+function countBs (s, z){
+  var countBs = 0;
+  for (var i = 0; i < s.length; i++) {
+    if (s[i] == z) {
+    countBs += 1;
+  }
+  }
+  return countBs;
+}
