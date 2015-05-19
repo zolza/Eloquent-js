@@ -174,3 +174,13 @@ function isEven (n) {
     return base * power(base, exponent - 1);
 }
 */
+
+function countBs (s){
+  var countBs = 0;
+  for (var i = 0; i < s.length; i++) {
+    if (s[i] == "B") {
+    countBs += 1;
+  }
+  }
+  return countBs;
+}
